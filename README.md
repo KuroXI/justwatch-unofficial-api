@@ -1,38 +1,44 @@
-# justwatch-unofficial-api
+# JustWatch Unofficial API
 
-This project is an unofficial API for JustWatch, a streaming guide that compiles data from various streaming platforms. It allows users to find where to watch their favorite movies and shows online.
+This project offers an unofficial API for JustWatch, a comprehensive streaming guide that aggregates data from multiple streaming platforms. It empowers users to effortlessly discover where to stream their beloved movies and shows online.
 
 ## Installation
 
-Clone the repository
+### Local Installation
 
-```bash
-git clone https://github.com/KuroXI/justwatch-unofficial-api.git
-cd ./justwatch-unofficial-api
-```
+1. Clone the repository:
 
-Install dependencies
+    ```bash
+    git clone https://github.com/KuroXI/justwatch-unofficial-api.git
+    cd ./justwatch-unofficial-api
+    ```
 
-```bash
-bun install
-```
+2. Install dependencies:
 
-To run
+    ```bash
+    npm install
+    ```
 
-```bash
-bun start
-```
+3. Run the API:
 
-## Features
+    ```bash
+    npm start
+    ```
 
-- Search for movies and shows across multiple streaming platforms.
-- Get detailed information about a specific movie or show.
-- Discover trending and popular content.
+### Cloud Hosting
 
-## Usage
+#### Vercel
 
-- [Collection](/docs/collection.md)
-- [Search](/docs/search.md)
-- [Info](/docs/info.md)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KuroXI/justwatch-unofficial-api)
 
-Please note that this is an unofficial API and is not endorsed by or affiliated with JustWatch.
+#### Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/KuroXI/justwatch-unofficial-api)
+
+#### Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/TCwMfF?referralCode=I46uT0)
+
+## Disclaimer
+
+Please note that this API is unofficial and not endorsed by or affiliated with JustWatch. Use it responsibly and adhere to the terms of service of the platforms it accesses.
