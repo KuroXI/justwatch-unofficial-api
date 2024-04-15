@@ -11,6 +11,7 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/qs": "^6.9.14",
+    "bun-vercel": "^1.0.0-alpha.5",
     "vercel": "^34.0.0",
     "yarn": "^1.22.22"
   },
