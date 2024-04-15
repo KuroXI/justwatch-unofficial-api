@@ -23,7 +23,10 @@ await fastify.register(collection, { prefix: "/collection" });
 await fastify.register(search, { prefix: "/search" });
 await fastify.register(info, { prefix: "/info" });
 
-fastify.listen({ port: Number(process.env.PORT) || 8080 }, (err, address) => {
-  if (err) throw err;
-  console.log(`Listening to ${address}`);
-});
+fastify.listen(
+  { host: "0.0.0.0", port: Number(process.env.PORT) || 8080 },
+  (err, address) => {
+    if (err) throw err;
+    console.log(`Listening to ${address}`);
+  }
+);
