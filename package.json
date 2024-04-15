@@ -4,11 +4,15 @@
   "type": "module",
   "scripts": {
     "dev": "bun --hot src/index.ts",
-    "start": "bun src/index.ts"
+    "start": "bun src/index.ts",
+    "build": "bun-vercel ./src/main.ts",
+    "vercel:dev": "vc dev --listen 8080 --yes"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/qs": "^6.9.14"
+    "@types/qs": "^6.9.14",
+    "vercel": "^34.0.0",
+    "yarn": "^1.22.22"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
