@@ -1,3 +1,0 @@
-{
-  "buildCommand": "bun build ./src/index.ts"
-}
