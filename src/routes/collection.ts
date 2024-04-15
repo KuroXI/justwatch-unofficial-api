@@ -2,6 +2,7 @@ import type { FastifyInstance } from "fastify";
 import type { PopularQuery } from "../types/query";
 import { post } from "../request";
 import { popularQuery } from "../query/Popular";
+import { BackdropProfile, PosterProfile } from "../types/variables";
 
 export default async function route(fastify: FastifyInstance) {
   fastify.get("/", async (request, reply) => {
@@ -12,8 +13,12 @@ export default async function route(fastify: FastifyInstance) {
       first: query.first,
       country: query.country,
       language: query.language,
-      profile: query.profile,
-      backdropProfile: query.backdropProfile,
+      profile:
+        PosterProfile[query.profile as unknown as keyof typeof PosterProfile],
+      backdropProfile:
+        BackdropProfile[
+          query.backdropProfile as unknown as keyof typeof BackdropProfile
+        ],
       format: query.format,
       popularTitlesSortBy: query.sort,
       popularTitlesFilter: {
