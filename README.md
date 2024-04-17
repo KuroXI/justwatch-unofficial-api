@@ -27,10 +27,6 @@ This project offers an unofficial API for JustWatch, a comprehensive streaming g
 
 ### Cloud Hosting
 
-#### Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KuroXI/justwatch-unofficial-api)
-
 #### Render
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/KuroXI/justwatch-unofficial-api)

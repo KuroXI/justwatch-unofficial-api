@@ -41,6 +41,7 @@ fragment PopularTitleGraphql on MovieOrShow {
   objectType
   content(country: $country, language: $language) {
     title
+    shortDescription
     fullPath
     trailers: clips(providers: [DAILYMOTION]) {
       sourceUrl
