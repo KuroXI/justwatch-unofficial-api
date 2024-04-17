@@ -25,6 +25,9 @@ await fastify.register(collection, { prefix: "/collection" });
 await fastify.register(search, { prefix: "/search" });
 await fastify.register(info, { prefix: "/info" });
 
+fastify.get("/", (_, reply) => reply.send("JustWatch Unofficial API!"));
+fastify.get("*", (_, reply) => reply.send("Page not found!"));
+
 fastify.listen(
   { host: "0.0.0.0", port: Number(process.env.PORT) || 8080 },
   (err, address) => {
