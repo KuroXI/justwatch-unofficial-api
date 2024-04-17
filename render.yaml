@@ -1,0 +1,14 @@
+services:
+  - type: web
+    runtime: node
+    name: justwatch-unofficial-api
+    repo: https://github.com/KuroXI/justwatch-unofficial-api
+    plan: free
+    branch: master
+    buildCommand: bun install
+    startCommand: bun start
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: BUN_VERSION
+        value: 1.1.3
